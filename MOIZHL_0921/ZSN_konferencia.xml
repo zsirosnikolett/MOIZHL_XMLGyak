@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<konferencia>
+    <cim cim="XML"/>
+    <hallgatók>
+        <hallgató>
+            <név nev="Zsiros Nikolett"/>
+            <lakcím cim="Radostyan"/>
+        </hallgató>
+    </hallgatók>
+    <helyszín hely="Miskolci Egyetem"/>
+    <előadó>
+        <név nev="Bednarik László"/>
+        <adószám id="1235456789"/>
+        <lakcím cim="Miskolc"/>
+    </előadó>
+    <dátum datum="2021.09.21"/>
+</konferencia>
