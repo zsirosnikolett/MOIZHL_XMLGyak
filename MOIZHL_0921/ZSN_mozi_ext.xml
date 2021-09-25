@@ -2,8 +2,11 @@
 
 <mozi>
 	<film id="txn_nxm_2jb" mufaj="horror">
-		<rendezo id="nzk_4xm_2jb" nev="alex"/>
-		<szinesz id="u5q_4xm_2jb" nev="Madison_Ivy"/>
-		<iro id="trv_4xm_2jb"/>
+		<rendezo id="nzk_4xm_2jb" nev="alex" />
+		<szinesz id="u5q_4xm_2jb" nev="Madison_Ivy" />
+		<iro id="trv_4xm_2jb" />
+		<producer id="rtz_4xm_2jb" nev="Aladar"/>
+		<dramaturg id="zui_4xm_2jb" nev="Monika"/>
+		<operator id="yxc_4xm_2jb" nev="Kende"/>
 	</film>
 </mozi>
