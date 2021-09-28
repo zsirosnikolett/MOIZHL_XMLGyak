@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<könyv id="1">
+	<cim cim="Kodde valva"/>
+	<kiadasi ev ev="2021"/>
+	<kiado kiado="General Press kiado"/>
+	<szerzok>
+		<szerzo1 nev="Katherine Webb"/>
+	</szerzok>
+	<absztrakt/>
+
+
+
+</könyv>
