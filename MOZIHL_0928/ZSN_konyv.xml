@@ -2,7 +2,7 @@
 
 <könyv id="1">
 	<cim cim="Kodde valva"/>
-	<kiadasi ev ev="2021"/>
+	<kiadasi_ev ev="2021"/>
 	<kiado kiado="General Press kiado"/>
 	<szerzok>
 		<szerzo1 nev="Katherine Webb"/>
