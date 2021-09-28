@@ -1,10 +1,10 @@
 <!DOCTYPE könyvek [
 
 <!ELEMENT könyvek (könyv*)>
-<!ELEMENT könyv (cim, kiadasi_ev,kiado,szerzo*)>
+<!ELEMENT könyv (cim, kiadasi_ev,kiado,szerzo,abstract*)>
 <!ELEMENT cim (#PCDATA)>
 <!ELEMENT kiadasi_ev (#PCDATA)>
 <!ELEMENT kiado (#PCDATA)>
 <!ELEMENT szerzo (#PCDATA)>
-
+<!ELEMENT abstract (#PCDATA)>
 ]>
