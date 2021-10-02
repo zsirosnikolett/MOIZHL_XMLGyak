@@ -1,14 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<könyv id="1">
-	<cim cim="Kodde valva"/>
-	<kiadasi_ev ev="2021"/>
-	<kiado kiado="General Press kiado"/>
-	<szerzok>
-		<szerzo1 nev="Katherine Webb"/>
-	</szerzok>
-	<absztrakt/>
 
-
-
-</könyv>
+<könyvek>
+	<könyv id="1">
+		<cim cim="Excel 2019"/>
+		<kiadasi_ev ev="2021"/>
+		<kiado kiado="Taramix kiado KFT"/>
+		<szerzok nev="Szabó Ildikó"/>
+		<abstract/>
+	</könyv>
+	
+	<könyv id="2">
+		<cim cim="Word 2019"/>
+		<kiadasi_ev ev="2021"/>
+		<kiado kiado="Taramix kido KFT"/>
+		<szerzok nev="Dávid Krisztina"/>
+		<abstract/>
+	</könyv>
+	
+	<könyv id="3">
+		<cim cim="PowerPoint 2019 zsebkönyv"/>
+		<kiadasi_ev ev="2019"/>
+		<kiado kiado="BBS-INFO KÖNYVK. ÉS INFORM. KFT."/>
+		<szerzok nev="Bártfai Tamás"/>
+		<abstract/>
+	</könyv>
+	
+</könyvek>
