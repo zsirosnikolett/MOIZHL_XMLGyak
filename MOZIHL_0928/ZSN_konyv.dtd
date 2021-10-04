@@ -1,4 +1,4 @@
-<!DOCTYPE könyvek [
+<?xml version="1.0" encoding="utf-8"?>
 
 <!ELEMENT könyvek (könyv*)>
 <!ELEMENT könyv (cim, kiadasi_ev,kiado,szerzo,abstract*)>
@@ -7,4 +7,4 @@
 <!ELEMENT kiado (#PCDATA)>
 <!ELEMENT szerzo (#PCDATA)>
 <!ELEMENT abstract (#PCDATA)>
-]>
+
