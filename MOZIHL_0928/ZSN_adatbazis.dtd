@@ -1,0 +1,20 @@
+<!DOCTYPE adatbazis [
+
+<!ELEMENT adatbazis (DOLGOZO) >
+<!ELEMENT DOLGOZO (kod, nev, fizetes)>
+<!ELEMENT kod ID #REQUIRED >
+<!ELEMENT nev (#PCDATA) >
+<!ELEMENT fizetes (#PCDATA) >
+
+]>
+
+<?xml version="1.0" ?>
+<adatbazis>
+
+<dolgozo>
+<kod id="1" />
+<nev nev="Minta Aladar" />
+<fizetes fizetes="120000" />
+</dolgozo>
+
+</adatbazis>
