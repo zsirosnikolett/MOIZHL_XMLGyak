@@ -1,4 +1,4 @@
-<!DOCTYPE orarend [
+<?xml version="1.0" encoding="utf-8"?>
 <!ELEMENT orarend (ora*)>
 <!ELEMENT orarend (targy, idopont, helyszin, oktato, szak)>
 <!ELEMENT targy (#PCDATA)>
@@ -10,4 +10,4 @@
 <!ELEMENT oktato (#PCDATA)>
 <!ELEMENT szak (#PCDATA)>
 
-]>
+
