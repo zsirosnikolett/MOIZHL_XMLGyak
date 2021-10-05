@@ -1,28 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
 
+<!DOCTYPE könyvek SYSTEM "ZSN_konyv.dtd">
 
 <könyvek>
-	<könyv id="1">
-		<cim cim="Excel 2019"/>
-		<kiadasi_ev ev="2021"/>
-		<kiado kiado="Taramix kiado KFT"/>
-		<szerzok nev="Szabó Ildikó"/>
+	<könyv id="x1">
+		<cim >Excel 2019</cim>
+		<kiadasi_ev>2021</kiadasi_ev>
+		<kiado>Taramix kiado KFT</kiado>
+		<szerzo>Szabó Ildikó</szerzo>
 		<abstract/>
 	</könyv>
 	
-	<könyv id="2">
-		<cim cim="Word 2019"/>
-		<kiadasi_ev ev="2021"/>
-		<kiado kiado="Taramix kido KFT"/>
-		<szerzok nev="Dávid Krisztina"/>
+	<könyv id="x2">
+		<cim >Word 2019</cim>
+		<kiadasi_ev>2021</kiadasi_ev>
+		<kiado>Taramix kido KFT</kiado>
+		<szerzo>Dávid Krisztina</szerzo>
 		<abstract/>
 	</könyv>
 	
-	<könyv id="3">
-		<cim cim="PowerPoint 2019 zsebkönyv"/>
-		<kiadasi_ev ev="2019"/>
-		<kiado kiado="BBS-INFO KÖNYVK. ÉS INFORM. KFT."/>
-		<szerzok nev="Bártfai Tamás"/>
+	<könyv id="x3">
+		<cim>PowerPoint 2019 zsebkönyv</cim>
+		<kiadasi_ev>2019</kiadasi_ev>
+		<kiado>BBS-INFO KÖNYVK. ÉS INFORM. KFT.</kiado>
+		<szerzo>Bártfai Tamás</szerzo> 
 		<abstract/>
 	</könyv>
 	

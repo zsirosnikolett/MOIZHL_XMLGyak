@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <!ELEMENT könyvek (könyv*)>
-<!ELEMENT könyv (cim, kiadasi_ev,kiado,szerzo,abstract*)>
+<!ELEMENT könyv (cim, kiadasi_ev,kiado,szerzo,abstract?)>
+<!ATTLIST könyv id ID #REQUIRED>
 <!ELEMENT cim (#PCDATA)>
 <!ELEMENT kiadasi_ev (#PCDATA)>
 <!ELEMENT kiado (#PCDATA)>
