@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<mozi xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+			 xsi:noNamespaceSchemaLocation="ZSN_mozi1.xsd" >
+	<film id="x01" mufaj="horror">
+		<rendezo id="x01" nev="Alex" />
+		<rendezo id="x02" nev="Alex" />
+		<szinesz id="x01" nev="Madison Ivy" />
+	</film>
+
+	<film id="x02" mufaj="scifi">
+		<rendezo id="x03" nev="Alex" />
+		<rendezo id="x04" nev="Alex" />
+		<szinesz id="x02" nev="Madison Ivy" />
+		<iro id="x02" />
+	</film>
+</mozi>
+	
+	
+	
