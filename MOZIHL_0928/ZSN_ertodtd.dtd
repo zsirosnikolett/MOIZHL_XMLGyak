@@ -1,0 +1,26 @@
+<!ELEMENT ermodel (A*, B*, C*, A-B*)>
+
+        <!ELEMENT A (Ab*, Ac)>
+        <!ATTLIST A Aa ID #REQUIRED>
+        <!ELEMENT Ab (Abx, Aby)>
+        <!ELEMENT Abx (#PCDATA)>
+        <!ELEMENT Aby (#PCDATA)>
+        <!ELEMENT Ac (Acd, Ace)>
+        <!ELEMENT Acd (#PCDATA)>
+        <!ELEMENT Ace (#PCDATA)>
+
+        <!ELEMENT B (Bb)>
+        <!ATTLIST B Ba ID #REQUIRED>
+        <!ATTLIST B Bc IDREF #IMPLIED>
+        <!ELEMENT Bb (Bbx, Bby)>
+        <!ELEMENT Bbx (#PCDATA)>
+        <!ELEMENT Bby (#PCDATA)>
+
+        <!ELEMENT C (Cb)>
+        <!ATTLIST C Ca ID #REQUIRED>
+        <!ELEMENT Cb (#PCDATA)>
+
+        <!ELEMENT A-B (A-Bc)>
+        <!ATTLIST A-B A-B-a IDREF #IMPLIED>
+        <!ATTLIST A-B A-B-b IDREF #IMPLIED>
+        <!ELEMENT A-Bc (#PCDATA)>
