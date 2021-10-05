@@ -1,21 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE adatbazis [
 
 <!ELEMENT adatbazis (DOLGOZO) >
-<!ELEMENT DOLGOZO (kod, nev, fizetes)>
-<!ELEMENT kod ID #REQUIRED >
-<!ELEMENT nev (#PCDATA) >
-<!ELEMENT fizetes (#PCDATA) >
-
+<!ELEMENT dolgozo (nev,fizetes)>
+<!ATTLIST dolgozo kod ID #REQUIRED>
+<!ELEMENT nev (#PCDATA)>
+<!ELEMENT fizetes (#PCDATA)>
 ]>
 
-<?xml version="1.0" encoding="utf-8"?>
 
 <adatbazis>
-
-<dolgozo>
-<kod id="1" />
-<nev nev="Minta Aladar" />
-<fizetes fizetes="120000" />
-</dolgozo>
-
+  <dolgozo kod="x01">
+      <nev>Minta Aladar</nev>
+      <fizetes>120000</fizetes>
+  </dolgozo>
 </adatbazis>
