@@ -3,11 +3,11 @@
 <orarend xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 			 xsi:noNamespaceSchemaLocation="ZSN_orarend1.xsd">
 
-	<ora id="x1" tipus="elmélet+gyakorlat" >
+	<ora id="1" tipus="gyakorlat" >
 		<targy nev="Automaták és formális nyelvek"/>
 		<idopont >
 
-			<nap>Hétfő</nap>
+			<nap>Hétfo</nap>
 			<tol>16:00</tol>
 			<ig>18:00</ig>
 		</idopont>
@@ -17,7 +17,7 @@
 
 	</ora>
 
-	<ora id="x2" tipus="elmélet+gyakorlat" >
+	<ora id="2" tipus="gyakorlat" >
 		<targy nev="Adatkezelés XML-ben"/>
 		<idopont >
 
@@ -31,7 +31,7 @@
 
 	</ora>
 
-	<ora id="x3" tipus="elmélet+gyakorlat" >
+	<ora id="3" tipus="elmelet" >
 		<targy nev="Vállalati információs rendszerek fejlesztése"/>
 		<idopont >
 
@@ -44,10 +44,10 @@
 		<szak>Programtervező</szak>
 	</ora>
 
-	<ora id="x4" tipus="elmélet+gyakorlat" >
+	<ora id="4" tipus="elmelet" >
 		<targy nev="Szakdolgozatkészítés I."/>
 		<idopont >
-			<nap>Csütörtök</nap>
+			<nap>Csutortok</nap>
 			<tol>16:00</tol>
 			<ig>17:00</ig>
 		</idopont>
@@ -56,10 +56,10 @@
 		<szak>Programtervező</szak>
 	</ora>
 
-	<ora id="x5" tipus="elmélet+gyakorlat" >
+	<ora id="5" tipus="gyakorlat" >
 		<targy nev="Testnevelés I."/>
 		<idopont >
-			<nap>Péntek</nap>
+			<nap>Pentek</nap>
 			<tol>10:00</tol>
 			<ig>18:00</ig>
 		</idopont>

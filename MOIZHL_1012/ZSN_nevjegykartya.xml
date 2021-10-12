@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<nevjegykartyak>
+	
+	<nevjegykartya>
+		<nev>Zsiros Nikolett</nev>
+		<ceg>
+			<nev>Rose eskuvoszervezes</nev>
+			<cim>
+				<iranyitoszam>3770</iranyitoszam>
+				<varos>Sajoszentpeter</varos>
+				<utca>Alacskai ut</utca>
+				<hazszam>10</hazszam>
+			</cim>
+			<telefonszam>0630333456</telefonszam>
+			<weblap>http://www.roseeskuvoszervezes.hu</weblap>
+		</ceg>
+		<beosztas>Vallakozo</beosztas>
+		<telefonszam>06708889915</telefonszam>
+		<email>roseeskuvo@roseeskuvo.hu</email>
+	</nevjegykartya>
+	<nevjegykartya>
+		<nev>Meszaros Lorinc</nev>
+		<ceg>
+			<nev>Meszaros&amp;Meszaros Kft</nev>
+			<cim>
+				<iranyitoszam>1119</iranyitoszam>
+				<varos>Budapest</varos>
+				<utca>Fehervari ut</utca>
+				<hazszam>83</hazszam>
+			</cim>
+			<telefonszam>06407589851</telefonszam>
+			<weblap>http://www.meszaroskft.com</weblap>
+		</ceg>
+		<beosztas>Gazszerelo segedmunkas technikus</beosztas>
+		<telefonszam>06708889915</telefonszam>
+		<email>meszaros@meszaros.com</email>
+	</nevjegykartya>
+
+</nevjegykartyak>	
