@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<adatbazis xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+		<!----	 xsi:noNamespaceSchemaLocation="ZSN_orarend1.xsd">----!>
+	<A >
+		<rekord>
+			<A>11</A>
+			<B>
+				<X>laci</X>
+				<Y>46</Y>
+			</B>
+			<D>
+				<D>61</D>
+				<E>07</E>
+			</D>
+		</rekord>
+		<rekord>
+			<A>12</A>
+			<B>
+				<X>era</X>
+				<Y>46</Y>
+			</B>
+			<D>
+				<D>61</D>
+				<E>09</E>
+			</D>
+		</rekord>
+		<rekord>
+			<A>12</A>
+			<B>
+				<X>era</X>
+				<Y>46</Y>
+			</B>
+			<D>
+				<D>61</D>
+				<E>09</E>
+			</D>
+		</rekord>
+</A>
+<B >
+		<rekord>
+			<A>11</A>
+			<B>
+				<X>23</X>
+				<Y>ee</Y>
+			</B>
+		</rekord>
+</B>
+<AB >
+
+		<rekord>
+			<C>22</C>
+			<P_A>12</P_A>
+			<P_B>11</P_B>
+		</rekord>
+</AB>
+<C >
+		<rekord>
+			<E>12</E>
+			<F>12</F>
+			<G>34</G>
+		</rekord>
+	</C>
+</adatbazis>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<konyvek>
+	<konyv isbn="9789634796503">
+		<cim>Az utolso 450 ev</cim>
+		<szerzo>Kohalmi Zoltan</szerzo>
+		<szereplo>
+			<nev>Kurt Vonnegut</nev>
+			<baratja> Douglas Adams</baratja>
+			<szuletett>1999-03-25</szuletett>
+			<jellemzes>Szorgalmas</jellemzes>
+		</szereplo>
+		<szereplo>
+			<nev>Douglas Adams</nev>
+			<szuletett>1998-06-08</szuletett>
+			<jellemzes>Nagylelku</jellemzes>
+		</szereplo>
+	</konyv>
+
+	</konyvek>
