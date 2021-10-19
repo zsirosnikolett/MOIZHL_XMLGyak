@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<szemelyek>
+	<szemely id="01">
+		<nev>Zsiros Nikolett</nev>
+		<kor>24</kor>
+		<varos>Miskolc</varos>
+	</szemely>
+
+	<szemely id="02">
+		<nev>Minta Aladar</nev>
+		<kor>20</kor>
+		<varos>Sajooros</varos>
+	</szemely>
+
+	<szemely id="01">
+		<nev>Minta Monika</nev>
+		<kor>36</kor>
+		<varos>Tiszaujvaros</varos>
+	</szemely>
+
+
+</szemelyek>
