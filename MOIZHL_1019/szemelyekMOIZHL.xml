@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<szemelyek>
+<szemelyek xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+			 xsi:noNamespaceSchemaLocation="szemelyekMOIZHL.xsd">
+
 	<szemely id="01">
 		<nev>Zsiros Nikolett</nev>
 		<kor>24</kor>
