@@ -24,7 +24,7 @@ public class SaxMOIZHL {
 			
 			SaxHandler handler = new SaxHandler();
 			
-			saxP.parse(new File("szemelyekB5XVY7.xml"), handler);
+			saxP.parse(new File("szemelyekMOIZHL.xml"), handler);
 			
 			
 		} catch (ParserConfigurationException | SAXException | IOException e) {
