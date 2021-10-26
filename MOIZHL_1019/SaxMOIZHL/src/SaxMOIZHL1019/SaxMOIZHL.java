@@ -28,7 +28,7 @@ public class SaxMOIZHL {
 			
 			
 		} catch (ParserConfigurationException | SAXException | IOException e) {
-			// TODO: handle exception
+			 e.printStackTrace();
 		}
 	}
 	
