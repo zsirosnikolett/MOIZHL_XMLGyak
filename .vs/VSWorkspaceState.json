@@ -2,9 +2,11 @@
   "ExpandedNodes": [
     "",
     "\\MOIZHL_1012",
-    "\\MOIZHL_1019\\SaxMOIZHL",
-    "\\MOIZHL_1026"
+    "\\MOIZHL_1026",
+    "\\MOIZHL_1026\\DomReadMOIZHL",
+    "\\MOIZHL_1026\\DomReadMOIZHL\\bin\\domMOIZHL1026",
+    "\\MOIZHL_1026\\DomReadMOIZHL\\src\\domMOIZHL1026"
   ],
-  "SelectedNode": "\\MOIZHL_1012\\ZSN_konyv1.xml",
+  "SelectedNode": "\\MOIZHL_1026\\carsMOIZHL.xml",
   "PreviewInSolutionExplorer": false
 }
