@@ -36,12 +36,31 @@ public class xPathMOIZHL {
 		  XPath xPath = XPathFactory.newInstance().newXPath();
 		  
 		  //Meg kell adni az elérési út kifejezését és a csomópont listát
-		  //String expression = "class";
+	
+			 //String expression = "class";
 		  
-		 // String expression = "class/student";
+			// String expression = "class/student";
 		  
-		 // String expression = "class/student[@id='01']";
-		   String expression = "//student";
+			 // String expression = "class/student[@id='01']";
+
+			 // String expression = "//student";
+
+			 //String expression = "/class/student[2]";
+
+			 // String expression = "/class/student[last()]";
+	
+			 //String expression = "/class/student[last()-1]";
+
+			 //  String expression = "/class/*";
+
+
+			//  String expression = "/class/student[@*]";
+
+			//  String expression = "/*/*";
+			
+			//  String expression = "/class/student[kor > 20]";
+
+			// String expression = "/class/student[keresztnev]";
 		  
 		  NodeList nodeList = (NodeList) xPath.compile(expression).evaluate(doc, XPathConstants.NODESET);
 		  
