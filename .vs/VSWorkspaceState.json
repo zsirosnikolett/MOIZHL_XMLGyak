@@ -2,11 +2,11 @@
   "ExpandedNodes": [
     "",
     "\\MOIZHL_1005",
-    "\\MOIZHL_1026\\DomReadMOIZHL",
-    "\\MOIZHL_1026\\DomReadMOIZHL\\src",
-    "\\MOIZHL_1026\\DomReadMOIZHL\\src\\domMOIZHL1026",
-    "\\MOIZHL_1109"
+    "\\MOIZHL_1109",
+    "\\MOIZHL_1109\\xPathMOIZHL",
+    "\\MOIZHL_1109\\xPathMOIZHL\\src",
+    "\\MOIZHL_1109\\xPathMOIZHL\\src\\xpathmoizhl1109"
   ],
-  "SelectedNode": "\\MOIZHL_1005\\ZSN_orarend.xsd",
+  "SelectedNode": "\\MOIZHL_1109\\xPathMOIZHL\\src\\xpathmoizhl1109\\xPathMOIZHL.java",
   "PreviewInSolutionExplorer": false
 }
