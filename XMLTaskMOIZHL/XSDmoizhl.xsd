@@ -1,0 +1,101 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:element name="Gyorsetterem"></xs:element>
+	<xs:element name="Beszallitok" ></xs:element>
+	<xs:element name="Beszallito"  type="BeszallitoType" ></xs:element>
+	<xs:element name="Pizzazok"></xs:element>
+	<xs:element name="Pizzazo" type="PizzazoType"></xs:element>
+	<xs:element name="Beszallitas" type="BeszallitasType"></xs:element>
+	<xs:element name="Futarok"></xs:element>
+	<xs:element name="Futar" type="FutarType"></xs:element>
+	<xs:element name="Pizzak"></xs:element>
+	<xs:element name="Pizza" type="PizzaType"></xs:element>
+	<xs:element name="Rendeles" type="RendelesType"></xs:element>
+	<xs:element name="Vevok"></xs:element>
+	<xs:element name="Vevo" type="VevoType"></xs:element>
+
+
+
+	<xs:complexType name="BeszallitoType">
+		<xs:sequence>
+			<xs:element name="Nev" type="xs:string" />
+			<xs:element name="Cim" type="CimType" />
+		</xs:sequence>
+			<xs:attribute name="BeszallitoID" type="xs:string" use="required" />
+		</xs:complexType >
+
+	<xs:complexType name="CimType">
+		<xs:sequence>
+			<xs:element name="Iranyitoszam" type="xs:unsignedShort" />
+			<xs:element name="Varos" type="xs:string" />
+			<xs:element name="Utca" type="xs:string" />
+			<xs:element name="Hazszam" type="xs:unsignedByte" />
+		</xs:sequence>
+	</xs:complexType >
+	
+	
+	<xs:complexType name="PizzazoType">
+		<xs:sequence>
+			<xs:element name="Nev" type="xs:string" />
+			<xs:element name="Nyitvatartas" type="xs:string" />
+			<xs:element name="Elerhetoseg" type="ElerhetosegType" />
+		</xs:sequence>
+		<xs:attribute name="PizzazoID" type="xs:unsignedByte" use="required" />
+	</xs:complexType >
+
+	<xs:complexType name="ElerhetosegType">
+		<xs:sequence>
+			<xs:element name="Weboldal" type="xs:string" />
+			<xs:element name="Telefonszam" type="xs:string" />
+		</xs:sequence>
+	</xs:complexType >
+
+	<xs:complexType name="BeszallitasType">
+		<xs:sequence>
+			<xs:element name="Hozzavalo" type="xs:string" />
+			<xs:element name="Datum" type="xs:string" />
+		</xs:sequence>
+		<xs:attribute name="BeszallitID" type="xs:unsignedByte" use="required" />
+		<xs:attribute name="BeszallitoID" type="xs:unsignedByte" use="required" />
+		<xs:attribute name="PizzazoID" type="xs:unsignedByte" use="required" />
+	</xs:complexType>
+
+
+
+	<xs:complexType name="FutarType">
+		<xs:sequence>
+			<xs:element name="Nev" type="xs:string" />
+			<xs:element name="Telefonszam" type="xs:string" />
+		</xs:sequence>
+		<xs:attribute name="FutarID" type="xs:unsignedByte" use="required" />
+		<xs:attribute name="PizzazoID" type="xs:unsignedByte" use="required" />
+	</xs:complexType >
+
+	<xs:complexType name="PizzaType">
+		<xs:sequence>
+			<xs:element name="Meret" type="xs:unsignedByte" />
+			<xs:element name="Teljes_ar" type="xs:unsignedShort" />
+			<xs:element name="Pizza_neve" type="xs:string" />
+		</xs:sequence>
+		<xs:attribute name="PizzaID" type="xs:unsignedByte" use="required" />
+		<xs:attribute name="PizzazoID" type="xs:unsignedByte" use="required" />
+	</xs:complexType >
+
+	<xs:complexType name="RendelesType">
+		<xs:attribute name="PizzaID" type="xs:unsignedByte" use="required" />
+		<xs:attribute name="RendelésID" type="xs:unsignedByte" use="required" />
+		<xs:attribute name="VevőID" type="xs:unsignedByte" use="required" />
+	</xs:complexType>
+	
+	
+	
+	<xs:complexType name="VevoType">
+		<xs:sequence>
+			<xs:element name="Nev" type="xs:string" />
+			<xs:element name="Cim" type="CimType" />
+			<xs:element name="Telefonszam" type="xs:string" />
+		</xs:sequence>
+		<xs:attribute name="VevoID" type="xs:unsignedByte" use="required" />
+	</xs:complexType >
+
+</xs:schema>
