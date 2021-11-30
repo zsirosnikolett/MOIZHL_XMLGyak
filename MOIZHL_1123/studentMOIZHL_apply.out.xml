@@ -1,0 +1,54 @@
+<html>
+<body>
+<h2>Hallgatok apply-template</h2>
+    
+<div>
+        ID: <span style="color:#ffff00">01</span>
+<br>
+        Vezetéknév: <span style="color:#ff0000">Zsiros</span>
+<br>
+        Keresztnév: <span style="color:#0000ff">Nikolett</span>
+<br>
+        Becenév: <span style="color:#00f0f0">Niki</span>
+<br>
+        Kor: <span style="color:#0f0f00">23</span>
+<br>
+        Fizetés: <span style="color:#00ff00">120000</span>
+<br>
+<br>
+</div>
+    
+<div>
+        ID: <span style="color:#ffff00">02</span>
+<br>
+        Vezetéknév: <span style="color:#ff0000">Szabo</span>
+<br>
+        Keresztnév: <span style="color:#0000ff">Gergely</span>
+<br>
+        Becen&eacute;v: <span style="color:#00f0f0">Gergo</span>
+<br>
+        Kor: <span style="color:#0f0f00">22</span>
+<br>
+        Fizetés: <span style="color:#00ff00">120000</span>
+<br>
+<br>
+</div>
+    
+<div>
+        ID: <span style="color:#ffff00">03</span>
+<br>
+        Vezetéknév: <span style="color:#ff0000">Meszaros</span>
+<br>
+        Keresztnév: <span style="color:#0000ff">Marcell</span>
+<br>
+        Becenév: <span style="color:#00f0f0">Marci</span>
+<br>
+        Kor: <span style="color:#0f0f00">22</span>
+<br>
+        Fizetés: <span style="color:#00ff00">100000</span>
+<br>
+<br>
+</div>
+
+</body>
+</html>
