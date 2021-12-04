@@ -1,20 +1,61 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <xs:schema xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
-	<xs:element name="Gyorsetterem"></xs:element>
-	<xs:element name="Beszallitok" ></xs:element>
-	<xs:element name="Beszallito"  type="BeszallitoType" ></xs:element>
-	<xs:element name="Pizzazok"></xs:element>
-	<xs:element name="Pizzazo" type="PizzazoType"></xs:element>
-	<xs:element name="Beszallitas" type="BeszallitasType"></xs:element>
-	<xs:element name="Futarok"></xs:element>
-	<xs:element name="Futar" type="FutarType"></xs:element>
-	<xs:element name="Pizzak"></xs:element>
-	<xs:element name="Pizza" type="PizzaType"></xs:element>
-	<xs:element name="Rendeles" type="RendelesType"></xs:element>
-	<xs:element name="Vevok"></xs:element>
-	<xs:element name="Vevo" type="VevoType"></xs:element>
-
-
+	 <xs:element name="Gyorsetterem">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:choice maxOccurs="unbounded">
+					<xs:element name="Beszallitok" ></xs:element>
+					<xs:element name="Beszallito"  type="BeszallitoType" ></xs:element>
+					<xs:element name="Pizzazok"></xs:element>
+					<xs:element name="Pizzazo" type="PizzazoType"></xs:element>
+					<xs:element name="Beszallitas" type="BeszallitasType"></xs:element>
+					<xs:element name="Futarok"></xs:element>
+					<xs:element name="Futar" type="FutarType"></xs:element>
+					<xs:element name="Pizzak"></xs:element>
+					<xs:element name="Pizza" type="PizzaType"></xs:element>
+					<xs:element name="Rendeles" type="RendelesType"></xs:element>
+					<xs:element name="Vevok"></xs:element>
+					<xs:element name="Vevo" type="VevoType"></xs:element>
+				 </xs:choice>
+            </xs:sequence>
+        </xs:complexType>
+		 
+			<xs:key name="BeszallitoID">
+				<xs:selector xpath="Beszallito"/>
+				<xs:field xpath="@BeszallitoID"/>
+			</xs:key>
+			
+			<xs:key name="PizzazoID">
+				<xs:selector xpath="Pizzazo"/>
+				<xs:field xpath="@PizzazoID"/>
+			</xs:key>
+			
+			<xs:key name="PizzaID">
+				<xs:selector xpath="Pizza"/>
+				<xs:field xpath="@PizzaID"/>
+			</xs:key>
+		 
+			<xs:key name="VevoID">
+				<xs:selector xpath="Vevo"/>
+				<xs:field xpath="@VevoID"/>
+			</xs:key>
+		 
+			<xs:key name="FutarID">
+				<xs:selector xpath="Futar"/>
+				<xs:field xpath="@FutarID"/>
+			</xs:key>
+			
+			<xs:key name="BeszallitID">
+				<xs:selector xpath="Beszallitas"/>
+				<xs:field xpath="@BeszallitID"/>
+			</xs:key>
+	 
+			<xs:key name="RendelesID">
+				<xs:selector xpath="Rendeles"/>
+				<xs:field xpath="@RendelesID"/>
+			</xs:key>
+	 
+		</xs:element>
 
 	<xs:complexType name="BeszallitoType">
 		<xs:sequence>
@@ -83,8 +124,8 @@
 
 	<xs:complexType name="RendelesType">
 		<xs:attribute name="PizzaID" type="xs:unsignedByte" use="required" />
-		<xs:attribute name="RendelésID" type="xs:unsignedByte" use="required" />
-		<xs:attribute name="VevőID" type="xs:unsignedByte" use="required" />
+		<xs:attribute name="RendelesID" type="xs:unsignedByte" use="required" />
+		<xs:attribute name="VevoID" type="xs:unsignedByte" use="required" />
 	</xs:complexType>
 	
 	

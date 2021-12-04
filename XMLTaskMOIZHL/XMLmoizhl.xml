@@ -79,8 +79,8 @@
 	</Pizzak>
 
 
-	<Rendeles PizzaID="01" RendelésID="01" VevőID="01"></Rendeles>
-	<Rendeles PizzaID="02" RendelésID="02" VevőID="02"></Rendeles>
+	<Rendeles PizzaID="01" RendelesID="01" VevoID="01"></Rendeles>
+	<Rendeles PizzaID="02" RendelesID="02" VevoID="02"></Rendeles>
 
 	<Vevok>
 		<Vevo VevoID="01">
