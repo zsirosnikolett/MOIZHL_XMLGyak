@@ -25,7 +25,7 @@
 	<Pizzazok>
 		<Pizzazo PizzazoID="01">
 			<Nev>Pizza Hut</Nev>
-			<Nyitvatartas>8-22</Nyitvatartas>
+			<Nyitvatartas>08-22</Nyitvatartas>
 			<Elerhetoseg>
 				<Weboldal>pizza.hut.hu</Weboldal>
 				<Telefonszam>(20)9876543</Telefonszam>
@@ -44,12 +44,12 @@
 	
 	<Beszallitas BeszallitID="01" BeszallitoID="01" PizzazoID="01" >
 		<Hozzavalo>Majonéz</Hozzavalo>
-		<Datum>2021.11.29</Datum>
+		<Datum>2021-11-29</Datum>
 	</Beszallitas>
 
 	<Beszallitas BeszallitID="02" BeszallitoID="02" PizzazoID="02" >
 		<Hozzavalo>Ketchup</Hozzavalo>
-		<Datum>2021.10.29</Datum>
+		<Datum>2021-10-29</Datum>
 	</Beszallitas>
 	
 	
