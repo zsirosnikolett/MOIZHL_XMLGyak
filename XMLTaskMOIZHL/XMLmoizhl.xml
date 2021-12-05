@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<Gyorsetterem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="XMLSchemaMoizhl.xsd">
+<?xml version="1.0" encoding="utf-8" standalone="no"?><Gyorsetterem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="XMLSchemaMoizhl.xsd">
 	<Pizzazok>
 		<Pizzazo PizzazoID="01">
 			<Nev>Pizza Hut</Nev>
@@ -10,7 +9,7 @@
 			</Elerhetoseg>
 		</Pizzazo>
 		<Pizzazo PizzazoID="02">
-			<Nev>Pizza Bázis</Nev>
+			<Nev>Pizza Bazis</Nev>
 			<Nyitvatartas>10-19</Nyitvatartas>
 			<Elerhetoseg>
 				<Weboldal>pizza.bazis.hu</Weboldal>
@@ -30,12 +29,12 @@
 		</Futar>
 	</Futarok>
 
-	<Beszallitas BeszallitID="01" BeszallitoID="01" PizzazoID="01" >
+	<Beszallitas BeszallitID="01" BeszallitoID="01" PizzazoID="01">
 		<Hozzavalo>Majonéz</Hozzavalo>
 		<Datum>2021-11-29</Datum>
 	</Beszallitas>
 
-	<Beszallitas BeszallitID="02" BeszallitoID="02" PizzazoID="02" >
+	<Beszallitas BeszallitID="02" BeszallitoID="02" PizzazoID="02">
 		<Hozzavalo>Ketchup</Hozzavalo>
 		<Datum>2021-10-29</Datum>
 	</Beszallitas>
@@ -80,11 +79,11 @@
 		</Pizza>
 	</Pizzak>
 
-	<Rendeles PizzaID="01" RendelesID="01" VevoID="01"></Rendeles>
-	<Rendeles PizzaID="02" RendelesID="02" VevoID="02"></Rendeles>
+	<Rendeles PizzaID="01" RendelesID="01" VevoID="01"/>
+	<Rendeles PizzaID="02" RendelesID="02" VevoID="02"/>
 
 	<Vevok>
-		<Vevo VevoID="01" >
+		<Vevo VevoID="01">
 			<Nev>Kiss János</Nev>
 			<Cim>
 				<Iranyitoszam>3509</Iranyitoszam>
@@ -94,7 +93,7 @@
 			</Cim>
 			<Telefonszam>(70)4343433</Telefonszam>
 		</Vevo>
-		<Vevo VevoID="02" >
+		<Vevo VevoID="02">
 			<Nev>Nagy Géza</Nev>
 			<Cim>
 				<Iranyitoszam>3510</Iranyitoszam>
