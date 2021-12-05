@@ -49,26 +49,24 @@ public class DomReadMOIZHL {
 				String Weboldal = element.getElementsByTagName("Weboldal").item(0).getTextContent();
 				String Telefonszam = element.getElementsByTagName("Telefonszam").item(0).getTextContent();
 				
-																									
-				String PizzazoID = element.getAttribute("PizzazoID");
 				String BeszallitasID = element.getAttribute("BeszallitasID");
-				String FutarID = element.getAttribute("FutarID");
-				String PizzaID = element.getAttribute("PizzaID");
+				
+		
+			
 				System.out.println("\n-----------------------------------" + (i + 1)
 						+ ". Pizzazo-----------------------------------");
 				System.out.println("Pizzazo adatok: \n\tNév:\t" + Nev + "\n\tNyitvatartas:\t" + Nyitvatartas
 						+ "\n\tWeboldal:\t" + Weboldal + "\n\tTelefonszám:\t" + Telefonszam);
-				ReadBeszallitasById(doc, BeszallitasID);
-				ReadFutarById(doc, FutarID);
-				ReadPizzaById(doc, PizzaID);
 			
+			
+				ReadBeszallitasById(doc, BeszallitasID);
 			
 			}
 		}
 	}
 	
 	public static void ReadFutarById(Document doc, String FutarID) {
-		NodeList nList = doc.getElementsByTagName("Futar"); 
+		NodeList nList = doc.getElementsByTagName("Futarok"); 
 		for (int i = 0; i < nList.getLength(); i++) {
 			Node nNode = nList.item(i);
 			Element element = (Element) nNode;
@@ -76,10 +74,10 @@ public class DomReadMOIZHL {
 				if (element.getAttribute("FutarID").equals(FutarID)) { 
 					String Nev = element.getElementsByTagName("Nev").item(0).getTextContent();
 					String Telefonszam = element.getElementsByTagName("Telefonszam").item(0).getTextContent();
-					System.out.println("Futár adatok: \n\tNév:\t" + Nev + "\n\tTelefonszam:\t" + Telefonszam); //Konzolra kiírás
-			
+					
 					String PizzaID = element.getAttribute("PizzaID");
 					
+					System.out.println("Futár adatok: \n\tNév:\t" + Nev + "\n\tTelefonszam:\t" + Telefonszam); //Konzolra kiírás
 					
 					
 					ReadPizzaById(doc, PizzaID);
@@ -88,7 +86,7 @@ public class DomReadMOIZHL {
 			}
 		}
 	}
-	
+
 	public static void ReadBeszallitasById(Document doc, String BeszallitasID) {
 		NodeList nList = doc.getElementsByTagName("Beszallitas"); 
 		for (int i = 0; i < nList.getLength(); i++) {
@@ -133,7 +131,7 @@ public class DomReadMOIZHL {
 	}
 	
 	public static void ReadPizzaById(Document doc, String PizzaID) {
-		NodeList nList = doc.getElementsByTagName("Pizza"); 
+		NodeList nList = doc.getElementsByTagName("Pizzak"); 
 		for (int i = 0; i < nList.getLength(); i++) {
 			Node nNode = nList.item(i);
 			Element element = (Element) nNode;
@@ -147,6 +145,11 @@ public class DomReadMOIZHL {
 					
 					String RendelesID = element.getAttribute("RendelesID");
 					ReadRendelesbyId(doc, RendelesID);
+					
+					String VevoID = element.getAttribute("VevoID");
+					
+					ReadVevoById(doc, VevoID);
+					
 					
 				}
 			}
@@ -165,13 +168,14 @@ public class DomReadMOIZHL {
 					String VevoID = element.getAttribute("VevoID");
 				
 					ReadVevoById(doc, VevoID);
+				
 				}
 			}
 		}
 	}
 	
 	public static void ReadVevoById(Document doc, String VevoID) {
-		NodeList nList = doc.getElementsByTagName("Vevo"); 
+		NodeList nList = doc.getElementsByTagName("Vevok"); 
 		for (int i = 0; i < nList.getLength(); i++) {
 			Node nNode = nList.item(i);
 			Element element = (Element) nNode;
@@ -186,6 +190,7 @@ public class DomReadMOIZHL {
 					System.out.println("Vevő adatok: \n\tNév:\t" + Nev + "\n\tTelefonszam:\t" + Telefonszam + 
 							"\n\tIrányítószám:\t" + Iranyitoszam +"\n\tVáros:\t" + Varos + "\n\tUtca:\t" + Utca + 
 							"\n\tHázszám:\t" + Hazszam); //Konzolra kiírás
+					
 					
 				}
 			}

@@ -65,12 +65,18 @@
 		<Pizza PizzaID="01" PizzazoID="01">
 			<Meret PizzaID="01">30</Meret>
 			<Teljes_ar>1200</Teljes_ar>
-			<Pizza_neve>Húsos_pizza"></Pizza_neve>
+			<Pizza_neve>Húsos_pizza</Pizza_neve>
 		</Pizza>
 		<Pizza PizzaID="02" PizzazoID="02">
 			<Meret PizzaID="02">40</Meret>
 			<Teljes_ar>3000</Teljes_ar>
-			<Pizza_neve>Gyros_pizza"></Pizza_neve>
+			<Pizza_neve>Gyros_pizza</Pizza_neve>
+		</Pizza>
+		<Pizza PizzaID="03" PizzazoID="02">
+			<Meret PizzaID="02">40</Meret>
+			<Teljes_ar>3500</Teljes_ar>
+			<Pizza_neve>Magyaros_pizza</Pizza_neve>
+		
 		</Pizza>
 	</Pizzak>
 
