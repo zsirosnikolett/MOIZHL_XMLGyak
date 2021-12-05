@@ -50,7 +50,7 @@ public class DomReadMOIZHL {
 				String Telefonszam = element.getElementsByTagName("Telefonszam").item(0).getTextContent();
 				
 																									
-				
+				String PizzazoID = element.getAttribute("PizzazoID");
 				String BeszallitasID = element.getAttribute("BeszallitasID");
 				String FutarID = element.getAttribute("FutarID");
 				String PizzaID = element.getAttribute("PizzaID");
@@ -61,7 +61,7 @@ public class DomReadMOIZHL {
 				ReadBeszallitasById(doc, BeszallitasID);
 				ReadFutarById(doc, FutarID);
 				ReadPizzaById(doc, PizzaID);
-				
+			
 			
 			}
 		}
@@ -79,6 +79,8 @@ public class DomReadMOIZHL {
 					System.out.println("Futár adatok: \n\tNév:\t" + Nev + "\n\tTelefonszam:\t" + Telefonszam); //Konzolra kiírás
 			
 					String PizzaID = element.getAttribute("PizzaID");
+					
+					
 					
 					ReadPizzaById(doc, PizzaID);
 					
