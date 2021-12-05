@@ -1,5 +1,45 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Gyorsetterem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="XSDmoizhl.xsd">
+	<Pizzazok>
+		<Pizzazo PizzazoID="01">
+			<Nev>Pizza Hut</Nev>
+			<Nyitvatartas>08-22</Nyitvatartas>
+			<Elerhetoseg>
+				<Weboldal>pizza.hut.hu</Weboldal>
+				<Telefonszam>(20)9876543</Telefonszam>
+			</Elerhetoseg>
+		</Pizzazo>
+		<Pizzazo PizzazoID="02">
+			<Nev>Pizza Bázis</Nev>
+			<Nyitvatartas>10-19</Nyitvatartas>
+			<Elerhetoseg>
+				<Weboldal>pizza.bazis.hu</Weboldal>
+				<Telefonszam>(20)8765432</Telefonszam>
+			</Elerhetoseg>
+		</Pizzazo>
+
+	<Futarok>
+		<Futar FutarID="01" PizzazoID="01">
+			<Nev>Kiss József</Nev>
+			<Telefonszam>(20)5234534</Telefonszam>
+		</Futar>
+
+		<Futar FutarID="02" PizzazoID="02">
+			<Nev>Nagy János</Nev>
+			<Telefonszam>(30)3452345</Telefonszam>
+		</Futar>
+	</Futarok>
+
+	<Beszallitas BeszallitID="01" BeszallitoID="01" PizzazoID="01" >
+		<Hozzavalo>Majonéz</Hozzavalo>
+		<Datum>2021-11-29</Datum>
+	</Beszallitas>
+
+	<Beszallitas BeszallitID="02" BeszallitoID="02" PizzazoID="02" >
+		<Hozzavalo>Ketchup</Hozzavalo>
+		<Datum>2021-10-29</Datum>
+	</Beszallitas>
+
 	<Beszallitok>
 		<Beszallito BeszallitoID="01">
 			<Nev>Városi Piac</Nev>
@@ -21,69 +61,24 @@
 		</Beszallito>
 	</Beszallitok>
 
-	
-	<Pizzazok>
-		<Pizzazo PizzazoID="01">
-			<Nev>Pizza Hut</Nev>
-			<Nyitvatartas>08-22</Nyitvatartas>
-			<Elerhetoseg>
-				<Weboldal>pizza.hut.hu</Weboldal>
-				<Telefonszam>(20)9876543</Telefonszam>
-			</Elerhetoseg>
-		</Pizzazo>
-		<Pizzazo PizzazoID="02">
-			<Nev>Pizza Bázis</Nev>
-			<Nyitvatartas>10-19</Nyitvatartas>
-			<Elerhetoseg>
-				<Weboldal>pizza.bazis.hu</Weboldal>
-				<Telefonszam>(20)8765432</Telefonszam>
-			</Elerhetoseg>
-		</Pizzazo>
-	</Pizzazok>
-
-	
-	<Beszallitas BeszallitID="01" BeszallitoID="01" PizzazoID="01" >
-		<Hozzavalo>Majonéz</Hozzavalo>
-		<Datum>2021-11-29</Datum>
-	</Beszallitas>
-
-	<Beszallitas BeszallitID="02" BeszallitoID="02" PizzazoID="02" >
-		<Hozzavalo>Ketchup</Hozzavalo>
-		<Datum>2021-10-29</Datum>
-	</Beszallitas>
-	
-	
-	<Futarok>
-		<Futar FutarID="01" PizzazoID="01">
-			<Nev>Kiss József</Nev>
-			<Telefonszam>(20)5234534</Telefonszam>
-		</Futar>
-		
-		<Futar FutarID="02" PizzazoID="02">
-			<Nev>Nagy János</Nev>
-			<Telefonszam>(30)3452345</Telefonszam>
-		</Futar>
-	</Futarok>
-
 	<Pizzak>
 		<Pizza PizzaID="01" PizzazoID="01">
-			<Meret>30</Meret>
+			<Meret PizzaID="01">30</Meret>
 			<Teljes_ar>1200</Teljes_ar>
 			<Pizza_neve>Húsos_pizza"></Pizza_neve>
 		</Pizza>
 		<Pizza PizzaID="02" PizzazoID="02">
-			<Meret>40</Meret>
+			<Meret PizzaID="02">40</Meret>
 			<Teljes_ar>3000</Teljes_ar>
 			<Pizza_neve>Gyros_pizza"></Pizza_neve>
 		</Pizza>
 	</Pizzak>
 
-
 	<Rendeles PizzaID="01" RendelesID="01" VevoID="01"></Rendeles>
 	<Rendeles PizzaID="02" RendelesID="02" VevoID="02"></Rendeles>
 
 	<Vevok>
-		<Vevo VevoID="01">
+		<Vevo VevoID="01" >
 			<Nev>Kiss János</Nev>
 			<Cim>
 				<Iranyitoszam>3509</Iranyitoszam>
@@ -93,7 +88,7 @@
 			</Cim>
 			<Telefonszam>(70)4343433</Telefonszam>
 		</Vevo>
-		<Vevo VevoID="02">
+		<Vevo VevoID="02" >
 			<Nev>Nagy Géza</Nev>
 			<Cim>
 				<Iranyitoszam>3510</Iranyitoszam>
@@ -104,5 +99,8 @@
 			<Telefonszam>(30)1212123</Telefonszam>
 		</Vevo>
 	</Vevok>
-	
+
+
+	</Pizzazok>
+
 </Gyorsetterem>

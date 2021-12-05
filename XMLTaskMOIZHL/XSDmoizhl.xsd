@@ -20,41 +20,61 @@
             </xs:sequence>
         </xs:complexType>
 		 
-			<xs:key name="BeszallitoID">
+			<xs:key name="BeszallitoID_PK">
 				<xs:selector xpath="Beszallito"/>
 				<xs:field xpath="@BeszallitoID"/>
 			</xs:key>
 			
-			<xs:key name="PizzazoID">
+			<xs:key name="PizzazoID_PK">
 				<xs:selector xpath="Pizzazo"/>
 				<xs:field xpath="@PizzazoID"/>
 			</xs:key>
 			
-			<xs:key name="PizzaID">
+			<xs:key name="PizzaID_PK">
 				<xs:selector xpath="Pizza"/>
 				<xs:field xpath="@PizzaID"/>
 			</xs:key>
 		 
-			<xs:key name="VevoID">
+			<xs:key name="VevoID_PK">
 				<xs:selector xpath="Vevo"/>
 				<xs:field xpath="@VevoID"/>
 			</xs:key>
 		 
-			<xs:key name="FutarID">
+			<xs:key name="FutarID_PK">
 				<xs:selector xpath="Futar"/>
 				<xs:field xpath="@FutarID"/>
 			</xs:key>
 			
-			<xs:key name="BeszallitID">
+			<xs:key name="BeszallitID_PK">
 				<xs:selector xpath="Beszallitas"/>
 				<xs:field xpath="@BeszallitID"/>
 			</xs:key>
 	 
-			<xs:key name="RendelesID">
+			<xs:key name="RendelesID_PK">
 				<xs:selector xpath="Rendeles"/>
 				<xs:field xpath="@RendelesID"/>
 			</xs:key>
-	 
+			
+			<xs:keyref name="VevoID_FK" refer="VevoID_PK">
+            <xs:selector xpath="Rendeles"/>
+            <xs:field xpath="@VevoID"/>
+			</xs:keyref>
+		 
+			<xs:keyref name="PizzazoID_FK" refer="PizzazoID_PK">
+            <xs:selector xpath="./Futar/Pizza/Beszallitas"/>
+            <xs:field xpath="@PizzazoID"/>
+			</xs:keyref>
+		 
+			<xs:keyref name="PizzaID_FK" refer="PizzaID_PK">
+            <xs:selector xpath="Rendeles"/>
+            <xs:field xpath="@PizzaID"/>
+			</xs:keyref>
+			
+			<xs:keyref name="BeszallitoID_FK" refer="BeszallitoID_PK">
+            <xs:selector xpath="Beszallitas"/>
+            <xs:field xpath="@BeszallitoID"/>
+			</xs:keyref>
+	
 		</xs:element>
 
 	<xs:complexType name="BeszallitoType">
