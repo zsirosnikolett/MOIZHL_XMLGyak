@@ -1,5 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<xs:schema xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<xs:schema xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" attributeFormDefault="unqualified"
+		   elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
 	 <xs:element name="Gyorsetterem">
         <xs:complexType>
             <xs:sequence>
@@ -94,7 +95,6 @@
 		</xs:sequence>
 	</xs:complexType >
 	
-	
 	<xs:complexType name="PizzazoType">
 		<xs:sequence>
 			<xs:element name="Nev" type="xs:string" />
@@ -121,8 +121,6 @@
 		<xs:attribute name="PizzazoID" type="xs:unsignedByte" use="required" />
 	</xs:complexType>
 
-
-
 	<xs:complexType name="FutarType">
 		<xs:sequence>
 			<xs:element name="Nev" type="xs:string" />
@@ -147,7 +145,6 @@
 		<xs:attribute name="RendelesID" type="xs:unsignedByte" use="required" />
 		<xs:attribute name="VevoID" type="xs:unsignedByte" use="required" />
 	</xs:complexType>
-	
 	
 	
 	<xs:complexType name="VevoType">

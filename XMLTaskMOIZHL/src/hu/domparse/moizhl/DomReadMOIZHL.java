@@ -12,7 +12,7 @@ import java.io.File;
 import java.io.IOException;
 
 public class DomReadMOIZHL {
-
+ 
 	public static void main(String[] args) {
 		try {
 			File xmlFile = new File("XMLmoizhl.xml"); // az XML fájl beolvasása
@@ -21,7 +21,7 @@ public class DomReadMOIZHL {
 			Document doc = dBuilder.parse(xmlFile); // a dokumentum lekérése
 			doc.getDocumentElement().normalize();
 			System.out.println("Pizzázó adatok lekérése:");
-			Read(doc); //A programunk fő metódusa, itt hívódik meg Read fgv
+			Read(doc); //A programunk fo metodusa, itt hivodik meg Read fgv
 			
 			
 			//Kivételkezelés 
@@ -36,35 +36,40 @@ public class DomReadMOIZHL {
 
 	
 	public static void Read(Document doc) {
-		NodeList nList = doc.getElementsByTagName("Pizzazo"); // Pizzazo taggal rendelkezõ elemek lekérése listaba
+		NodeList nList = doc.getElementsByTagName("Pizzazo"); // Pizzazo taggal rendelkezo elemek lekerese listaba
 																
-		for (int i = 0; i < nList.getLength(); i++) { // listán végigmegyünk
-			Node nNode = nList.item(i); // lekérjük a lista aktuális elemét, Elementé konvertáljuk
+		for (int i = 0; i < nList.getLength(); i++) { // listan vegigmegyunk
+			Node nNode = nList.item(i); // lekerjuk a lista aktualis elemet, Elementte konvertaljuk
 			Element element = (Element) nNode;
-			// Lekérjük az attribútumokat, majd azok segítségével meghívjuk a definiált metódusokat
+			// Lekerjük az attributumokat, majd azok segitsegevel meghivjuk a definiált metodusokat
 			
 			if (nNode.getNodeType() == Node.ELEMENT_NODE) {
-				String Nev = element.getElementsByTagName("Nev").item(0).getTextContent(); // darabszám lekerdezese
+				String Nev = element.getElementsByTagName("Nev").item(0).getTextContent(); // darabszam lekerdezese
 				String Nyitvatartas = element.getElementsByTagName("Nyitvatartas").item(0).getTextContent();
 				String Weboldal = element.getElementsByTagName("Weboldal").item(0).getTextContent();
 				String Telefonszam = element.getElementsByTagName("Telefonszam").item(0).getTextContent();
 				
 				String BeszallitasID = element.getAttribute("BeszallitasID");
+				String FutarID = element.getAttribute("FutarID");
 				
-		
+				String PizzaID = element.getAttribute("PizzaID");
 			
 				System.out.println("\n-----------------------------------" + (i + 1)
 						+ ". Pizzazo-----------------------------------");
 				System.out.println("Pizzazo adatok: \n\tNév:\t" + Nev + "\n\tNyitvatartas:\t" + Nyitvatartas
 						+ "\n\tWeboldal:\t" + Weboldal + "\n\tTelefonszám:\t" + Telefonszam);
 			
-			
+
+				
 				ReadBeszallitasById(doc, BeszallitasID);
+				ReadFutarById(doc, FutarID);
+				ReadPizzaById(doc, PizzaID);
 			
 			}
 		}
 	}
-	
+	// fa struktúra miatt az attribútumban megadott id alapján kérdezzük le az egyes rendeléshez tartozó elemeket
+		// A legtobb objektum rendelkezik leszarmazottal, amelyet egy ujabb metódus kerdez le, az attrubutumban megadott ID alapjan
 	public static void ReadFutarById(Document doc, String FutarID) {
 		NodeList nList = doc.getElementsByTagName("Futarok"); 
 		for (int i = 0; i < nList.getLength(); i++) {
@@ -74,13 +79,7 @@ public class DomReadMOIZHL {
 				if (element.getAttribute("FutarID").equals(FutarID)) { 
 					String Nev = element.getElementsByTagName("Nev").item(0).getTextContent();
 					String Telefonszam = element.getElementsByTagName("Telefonszam").item(0).getTextContent();
-					
-					String PizzaID = element.getAttribute("PizzaID");
-					
-					System.out.println("Futár adatok: \n\tNév:\t" + Nev + "\n\tTelefonszam:\t" + Telefonszam); //Konzolra kiírás
-					
-					
-					ReadPizzaById(doc, PizzaID);
+					System.out.println("Futár adatok: \n\tNév:\t" + Nev + "\n\tTelefonszam:\t" + Telefonszam); //Konzolra kiiras
 					
 				}
 			}
@@ -96,7 +95,7 @@ public class DomReadMOIZHL {
 				if (element.getAttribute("BeszallitasID").equals(BeszallitasID)) { 
 					String Datum = element.getElementsByTagName("Datum").item(0).getTextContent();
 					String Hozzavalo = element.getElementsByTagName("Hozzavalo").item(0).getTextContent();
-					System.out.println("Beszállítás adatok: \n\tDátum\t" + Datum + "\n\tHozzávaló:\t" + Hozzavalo);//Konzolra kiírás
+					System.out.println("Beszállítás adatok: \n\tDátum\t" + Datum + "\n\tHozzávaló:\t" + Hozzavalo);//Konzolra kiras
 					String BeszallitoID = element.getAttribute("BeszallitoID");
 					
 					ReadBeszallitoById(doc, BeszallitoID);
@@ -104,7 +103,6 @@ public class DomReadMOIZHL {
 			}
 		}
 	}
-	
 	
 	public static void ReadBeszallitoById(Document doc, String BeszallitoID) {
 		NodeList nList = doc.getElementsByTagName("Beszallito"); 
@@ -120,16 +118,11 @@ public class DomReadMOIZHL {
 					String Hazszam = element.getElementsByTagName("Hazszam").item(0).getTextContent();
 					
 					System.out.println("Beszállító adatok: \n\tNév:\t" + Nev +  "\n\tIrányítószám:\t" + Iranyitoszam 
-							+"\n\tVáros:\t" + Varos + "\n\tUtca:\t" + Utca + "\n\tHázszám:\t" + Hazszam); //Konzolra kiírás
-					
-					String FutarID = element.getAttribute("FutarID");
-					
-					ReadFutarById(doc, FutarID);
+							+"\n\tVáros:\t" + Varos + "\n\tUtca:\t" + Utca + "\n\tHázszám:\t" + Hazszam); //Konzolra kiiras
 				}
 			}
 		}
 	}
-	
 	public static void ReadPizzaById(Document doc, String PizzaID) {
 		NodeList nList = doc.getElementsByTagName("Pizzak"); 
 		for (int i = 0; i < nList.getLength(); i++) {
@@ -141,16 +134,9 @@ public class DomReadMOIZHL {
 					String Teljes_ar = element.getElementsByTagName("Teljes_ar").item(0).getTextContent();
 					String Pizza_neve = element.getElementsByTagName("Pizza_neve").item(0).getTextContent();
 					System.out.println("Pizza adatok: \n\tMeret:\t" + Meret + "\n\tTeljes_ar:\t" + Teljes_ar
-							+ "\n\tPizza_neve:\t" + Pizza_neve); //Konzolra kiírás
-					
+							+ "\n\tPizza_neve:\t" + Pizza_neve); //Konzolra kiiras
 					String RendelesID = element.getAttribute("RendelesID");
 					ReadRendelesbyId(doc, RendelesID);
-					
-					String VevoID = element.getAttribute("VevoID");
-					
-					ReadVevoById(doc, VevoID);
-					
-					
 				}
 			}
 		}
@@ -164,14 +150,15 @@ public class DomReadMOIZHL {
 			if (nNode.getNodeType() == Node.ELEMENT_NODE) {
 				if (element.getAttribute("RendelesID").equals(RendelesID)) { 
 
+					String VevoID = element.getAttribute("VevoID");
+					ReadVevoById(doc, VevoID);
 					
-					
-				
+					String PizzaID = element.getAttribute("PizzaID");
+					ReadPizzaById(doc, PizzaID);
 				}
 			}
 		}
 	}
-	
 	public static void ReadVevoById(Document doc, String VevoID) {
 		NodeList nList = doc.getElementsByTagName("Vevok"); 
 		for (int i = 0; i < nList.getLength(); i++) {
@@ -187,15 +174,9 @@ public class DomReadMOIZHL {
 					String Hazszam = element.getElementsByTagName("Hazszam").item(0).getTextContent();
 					System.out.println("Vevő adatok: \n\tNév:\t" + Nev + "\n\tTelefonszam:\t" + Telefonszam + 
 							"\n\tIrányítószám:\t" + Iranyitoszam +"\n\tVáros:\t" + Varos + "\n\tUtca:\t" + Utca + 
-							"\n\tHázszám:\t" + Hazszam); //Konzolra kiírás
-					
-					
+							"\n\tHázszám:\t" + Hazszam); //Konzolra kiiras
 				}
 			}
 		}
 	}
-
-	
-	
 }
-

@@ -21,8 +21,8 @@ public class DomQueryMOIZHL {
 	public static void main(String[] args)
 			throws ParserConfigurationException, IOException, SAXException, TransformerException {
 		
-		File xmlFile = new File("XMLmoizhl.xml"); // xml fájl bekérése
-		DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance(); // olvasás lehetové tétele
+		File xmlFile = new File("XMLmoizhl.xml"); // xml fajl bekerese
+		DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance(); // olvasas lehetove tetele, /XML doksiból DOM doksi létrehozása
 		DocumentBuilder dBuilder = factory.newDocumentBuilder();
 		Document doc = dBuilder.parse(xmlFile);
 		doc.getDocumentElement().normalize();
@@ -32,9 +32,9 @@ public class DomQueryMOIZHL {
 		LoadPizzazoQuery(doc);
 	
 	}
-	//Kilistázza az összes Pizzázó nevét
+	//Kilistazza az osszes pizzazo nevet
 		public static void LoadPizzazoQuery(Document doc) throws TransformerException {
-			NodeList nodeList = doc.getElementsByTagName("Pizzazo"); // Pizzázó elemek listázása
+			NodeList nodeList = doc.getElementsByTagName("Pizzazo"); // Pizzazo elemek listazasa
 			String Pizzazo;
 			Element element = null;
 			Node nNode = null;
@@ -43,14 +43,9 @@ public class DomQueryMOIZHL {
 				element = (Element) nNode;
 				String Nev = element.getElementsByTagName("Nev").item(0).getTextContent();
 				System.out.println((i + 1) + ") " + Nev);
-
-
-	
 		}
-	
-		
-
-		System.out.println("Írja be annak a Pizzázónak a nevét, amelyikbol látni szeretné a Pizza adatait:");
+			// Pizzazo valasztas
+		System.out.println("Irja be annak a Pizzazonak a nevet, amelyiknek latni szeretne a Pizzak adatait:");
 		Scanner sc = new Scanner(System.in);
 		Pizzazo = sc.nextLine();
 		for (int i = 0; i < nodeList.getLength(); i++) {
@@ -59,12 +54,12 @@ public class DomQueryMOIZHL {
 			if (nNode.getNodeType() == Node.ELEMENT_NODE) {
 
 				if (Pizzazo.equals("Pizza Hut")) {
-					LoadPizzaQuery(doc, "01");
+					LoadPizzaQuery(doc, "1");
 					break;
 				}
 
 				if (Pizzazo.equals("Pizza Bazis")) {
-					LoadPizzaQuery(doc, "02");
+					LoadPizzaQuery(doc, "2");
 					break;
 					
 				}
@@ -72,7 +67,7 @@ public class DomQueryMOIZHL {
 		}
 		sc.close();
 	}
-	//A kiválasztott Pizzázó Beszallitoinak kiírása
+	//A kivalasztott Pizzazo Pizzainak kiiraasa
 			public static void LoadPizzaQuery(Document doc, String id) throws TransformerException {
 				NodeList nodeList = doc.getElementsByTagName("Pizza");
 				int Pizza = 0;
@@ -80,7 +75,7 @@ public class DomQueryMOIZHL {
 				for (int i = 0; i < nodeList.getLength(); i++) {
 					Node nNode = nodeList.item(i);
 					Element element = (Element) nNode;
-					String PizzazoID = element.getAttribute("PizzaID");
+					String PizzazoID = element.getAttribute("PizzazoID");
 					
 					if (nNode.getNodeType() == Node.ELEMENT_NODE) {
 						
@@ -88,7 +83,7 @@ public class DomQueryMOIZHL {
 							Pizza+= 1;
 						
 							System.out.println(Pizza + ". Pizza adatai:");
-							String PizzaID = element.getAttribute("PizzaID");
+							String PizzaID = element.getAttribute("id");
 							DomReadMOIZHL.ReadPizzaById(doc, PizzaID);
 
 						}
