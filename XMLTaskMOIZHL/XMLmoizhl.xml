@@ -17,93 +17,93 @@
 			</Elerhetoseg>
 		</Pizzazo>
 
-	<Futarok>
-		<Futar FutarID="01" PizzazoID="01">
-			<Nev>Kiss József</Nev>
-			<Telefonszam>(20)5234534</Telefonszam>
-		</Futar>
+		<Futarok>
+			<Futar FutarID="01" PizzazoID="01">
+				<Nev>Kiss József</Nev>
+				<Telefonszam>(20)5234534</Telefonszam>
+			</Futar>
 
-		<Futar FutarID="02" PizzazoID="02">
-			<Nev>Nagy János</Nev>
-			<Telefonszam>(30)3452345</Telefonszam>
-		</Futar>
-	</Futarok>
+			<Futar FutarID="02" PizzazoID="02">
+				<Nev>Nagy János</Nev>
+				<Telefonszam>(30)3452345</Telefonszam>
+			</Futar>
+		</Futarok>
 
-	<Beszallitas BeszallitID="01" BeszallitoID="01" PizzazoID="01">
-		<Hozzavalo>Majonéz</Hozzavalo>
-		<Datum>2021-11-29</Datum>
-	</Beszallitas>
+		<Beszallitas BeszallitID="01" BeszallitoID="01" PizzazoID="01">
+			<Hozzavalo>Majonéz</Hozzavalo>
+			<Datum>2021-11-29</Datum>
+		</Beszallitas>
 
-	<Beszallitas BeszallitID="02" BeszallitoID="02" PizzazoID="02">
-		<Hozzavalo>Ketchup</Hozzavalo>
-		<Datum>2021-10-29</Datum>
-	</Beszallitas>
+		<Beszallitas BeszallitID="02" BeszallitoID="02" PizzazoID="02">
+			<Hozzavalo>Ketchup</Hozzavalo>
+			<Datum>2021-10-29</Datum>
+		</Beszallitas>
 
-	<Beszallitok>
-		<Beszallito BeszallitoID="01">
-			<Nev>Városi Piac</Nev>
-			<Cim>
-				<Iranyitoszam>3509</Iranyitoszam>
-				<Varos>Miskolc</Varos>
-				<Utca>Fő utca</Utca>
-				<Hazszam>13</Hazszam>
-			</Cim>
-		</Beszallito>
-		<Beszallito BeszallitoID="02">
-			<Nev>Kis Zöldséges</Nev>
-			<Cim>
-				<Iranyitoszam>1032</Iranyitoszam>
-				<Varos>Budapest</Varos>
-				<Utca>Arany János út</Utca>
-				<Hazszam>5</Hazszam>
-			</Cim>
-		</Beszallito>
-	</Beszallitok>
+		<Beszallitok>
+			<Beszallito BeszallitoID="01">
+				<Nev>Városi Piac</Nev>
+				<Cim>
+					<Iranyitoszam>3509</Iranyitoszam>
+					<Varos>Miskolc</Varos>
+					<Utca>Fő utca</Utca>
+					<Hazszam>13</Hazszam>
+				</Cim>
+			</Beszallito>
+			<Beszallito BeszallitoID="02">
+				<Nev>Kis Zöldséges</Nev>
+				<Cim>
+					<Iranyitoszam>1032</Iranyitoszam>
+					<Varos>Budapest</Varos>
+					<Utca>Arany János út</Utca>
+					<Hazszam>5</Hazszam>
+				</Cim>
+			</Beszallito>
+		</Beszallitok>
 
-	<Pizzak>
-		<Pizza PizzaID="01" PizzazoID="01">
-			<Meret PizzaID="01">30</Meret>
-			<Teljes_ar>1200</Teljes_ar>
-			<Pizza_neve>Húsos_pizza</Pizza_neve>
-		</Pizza>
-		<Pizza PizzaID="02" PizzazoID="02">
-			<Meret PizzaID="02">40</Meret>
-			<Teljes_ar>3000</Teljes_ar>
-			<Pizza_neve>Gyros_pizza</Pizza_neve>
-		</Pizza>
-		<Pizza PizzaID="03" PizzazoID="02">
-			<Meret PizzaID="02">40</Meret>
-			<Teljes_ar>3500</Teljes_ar>
-			<Pizza_neve>Magyaros_pizza</Pizza_neve>
-		
-		</Pizza>
-	</Pizzak>
+		<Pizzak>
+			<Pizza PizzaID="01" PizzazoID="01">
+				<Meret PizzaID="01">30</Meret>
+				<Teljes_ar>1200</Teljes_ar>
+				<Pizza_neve>Húsos_pizza</Pizza_neve>
+			</Pizza>
+			<Pizza PizzaID="02" PizzazoID="02">
+				<Meret PizzaID="02">20</Meret>
+				<Teljes_ar>2500</Teljes_ar>
+				<Pizza_neve>California</Pizza_neve>
+			</Pizza>
+			<Pizza PizzaID="03" PizzazoID="02">
+				<Meret PizzaID="02">40</Meret>
+				<Teljes_ar>3500</Teljes_ar>
+				<Pizza_neve>Magyaros_pizza</Pizza_neve>
 
-	<Rendeles PizzaID="01" RendelesID="01" VevoID="01"/>
-	<Rendeles PizzaID="02" RendelesID="02" VevoID="02"/>
+			</Pizza>
+		</Pizzak>
 
-	<Vevok>
-		<Vevo VevoID="01">
-			<Nev>Kiss János</Nev>
-			<Cim>
-				<Iranyitoszam>3509</Iranyitoszam>
-				<Varos>Miskolc</Varos>
-				<Utca>Virág utca</Utca>
-				<Hazszam>1</Hazszam>
-			</Cim>
-			<Telefonszam>(70)4343433</Telefonszam>
-		</Vevo>
-		<Vevo VevoID="02">
-			<Nev>Nagy Géza</Nev>
-			<Cim>
-				<Iranyitoszam>3510</Iranyitoszam>
-				<Varos>Miskolc</Varos>
-				<Utca>Szeder utca</Utca>
-				<Hazszam>32</Hazszam>
-			</Cim>
-			<Telefonszam>(30)1212123</Telefonszam>
-		</Vevo>
-	</Vevok>
+		<Rendeles PizzaID="01" RendelesID="01" VevoID="01"/>
+		<Rendeles PizzaID="02" RendelesID="02" VevoID="02"/>
+
+		<Vevok>
+			<Vevo VevoID="01">
+				<Nev>Kiss János</Nev>
+				<Cim>
+					<Iranyitoszam>3509</Iranyitoszam>
+					<Varos>Miskolc</Varos>
+					<Utca>Virág utca</Utca>
+					<Hazszam>1</Hazszam>
+				</Cim>
+				<Telefonszam>(70)4343433</Telefonszam>
+			</Vevo>
+			<Vevo VevoID="02">
+				<Nev>Nagy Géza</Nev>
+				<Cim>
+					<Iranyitoszam>3510</Iranyitoszam>
+					<Varos>Miskolc</Varos>
+					<Utca>Szeder utca</Utca>
+					<Hazszam>32</Hazszam>
+				</Cim>
+				<Telefonszam>(30)1212123</Telefonszam>
+			</Vevo>
+		</Vevok>
 
 
 	</Pizzazok>

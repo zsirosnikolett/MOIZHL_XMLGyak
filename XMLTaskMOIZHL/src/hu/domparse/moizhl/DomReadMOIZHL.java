@@ -24,7 +24,7 @@ public class DomReadMOIZHL {
 			Read(doc); //A programunk fő metódusa, itt hívódik meg Read fgv
 			
 			
-			//Kivételkezelés
+			//Kivételkezelés 
 		} catch (ParserConfigurationException pce) {
 			pce.printStackTrace();
 		} catch (IOException ioe) {
@@ -165,9 +165,7 @@ public class DomReadMOIZHL {
 				if (element.getAttribute("RendelesID").equals(RendelesID)) { 
 
 					
-					String VevoID = element.getAttribute("VevoID");
-				
-					ReadVevoById(doc, VevoID);
+					
 				
 				}
 			}

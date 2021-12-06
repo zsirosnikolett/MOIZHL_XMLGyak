@@ -74,6 +74,7 @@ public class DomModifyMOIZHL {
 			// Kiiratjuk a jelenlegi Beszállítókat, majd lekérdezzük melyiket kívánja
 			// módosítani.
 			System.out.println("Melyik Beszállítónak az adatait szeretné módosítani?");
+			
 			for (int i = 1; i < beszallitoszam + 1; i++) {
 				System.out.println(i + ". beszállító");
 				DomReadMOIZHL.ReadBeszallitoById(doc, String.valueOf(i));
@@ -99,7 +100,7 @@ public class DomModifyMOIZHL {
 				Node nNode = nodeList.item(i);
 				if (nNode.getNodeType() == Node.ELEMENT_NODE) {
 					Element element = (Element) nNode;
-					String sid = element.getAttribute("id");
+					String sid = element.getAttribute("BeszallitoID");
 					if (sid.equals(id)) {
 						Node node1 = element.getElementsByTagName("Nev").item(0);
 						node1.setTextContent(Nev);
@@ -140,7 +141,7 @@ public class DomModifyMOIZHL {
 				Node nNode = nodeList.item(i);
 				if (nNode.getNodeType() == Node.ELEMENT_NODE) {
 					Element element = (Element) nNode;
-					String sid = element.getAttribute("id");
+					String sid = element.getAttribute("PizzaID");
 					if (sid.equals(id)) {
 						Node node1 = element.getElementsByTagName("Meret").item(0);
 						node1.setTextContent(Meret);
@@ -157,7 +158,7 @@ public class DomModifyMOIZHL {
 	 private static void ModifyFutarok(Document doc, int futarszam) throws TransformerException {
 			System.out.println("Melyik Futárt kívánja módosítani?");
 			for (int i = 1; i < futarszam + 1; i++) {
-				System.out.println(i + ". pizza");
+				System.out.println(i + ". futar");
 				DomReadMOIZHL.ReadFutarById(doc, String.valueOf(i));
 				System.out.println("----------------------------------------------");
 			}
@@ -175,7 +176,7 @@ public class DomModifyMOIZHL {
 				Node nNode = nodeList.item(i);
 				if (nNode.getNodeType() == Node.ELEMENT_NODE) {
 					Element element = (Element) nNode;
-					String sid = element.getAttribute("id");
+					String sid = element.getAttribute("FutarID");
 					if (sid.equals(id)) {
 						Node node1 = element.getElementsByTagName("Nev").item(0);
 						node1.setTextContent(Nev);
