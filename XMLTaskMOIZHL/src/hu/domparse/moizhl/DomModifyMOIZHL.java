@@ -16,7 +16,7 @@ import javax.xml.transform.stream.StreamResult;
 import java.io.File;
 import java.io.IOException;
 import java.util.Scanner;
- 
+  
 public class DomModifyMOIZHL {
 	 public static void main(String[] args) 
 		 throws ParserConfigurationException, IOException, SAXException, TransformerException {
@@ -79,7 +79,7 @@ public class DomModifyMOIZHL {
 				System.out.println(i + ". beszállító");
 				DomReadMOIZHL.ReadBeszallitoById(doc, String.valueOf(i));
 				System.out.println("----------------------------------------------");
-			}
+			} 
 			String id = ReadId();
 			// Bekérjük az új adatokat
 			Scanner sc = new Scanner(System.in);

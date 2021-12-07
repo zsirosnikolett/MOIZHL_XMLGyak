@@ -10,7 +10,7 @@ import javax.xml.parsers.DocumentBuilderFactory;
 import javax.xml.parsers.ParserConfigurationException;
 import java.io.File;
 import java.io.IOException;
-
+ 
 public class DomReadMOIZHL {
  
 	public static void main(String[] args) {
@@ -48,19 +48,18 @@ public class DomReadMOIZHL {
 				String Nyitvatartas = element.getElementsByTagName("Nyitvatartas").item(0).getTextContent();
 				String Weboldal = element.getElementsByTagName("Weboldal").item(0).getTextContent();
 				String Telefonszam = element.getElementsByTagName("Telefonszam").item(0).getTextContent();
-				
+	
+				String VevoID = element.getAttribute("VevoID");
 				String BeszallitasID = element.getAttribute("BeszallitasID");
 				String FutarID = element.getAttribute("FutarID");
-				
 				String PizzaID = element.getAttribute("PizzaID");
 			
 				System.out.println("\n-----------------------------------" + (i + 1)
 						+ ". Pizzazo-----------------------------------");
 				System.out.println("Pizzazo adatok: \n\tNév:\t" + Nev + "\n\tNyitvatartas:\t" + Nyitvatartas
 						+ "\n\tWeboldal:\t" + Weboldal + "\n\tTelefonszám:\t" + Telefonszam);
-			
-
 				
+				ReadVevoById(doc, VevoID);
 				ReadBeszallitasById(doc, BeszallitasID);
 				ReadFutarById(doc, FutarID);
 				ReadPizzaById(doc, PizzaID);
@@ -135,30 +134,13 @@ public class DomReadMOIZHL {
 					String Pizza_neve = element.getElementsByTagName("Pizza_neve").item(0).getTextContent();
 					System.out.println("Pizza adatok: \n\tMeret:\t" + Meret + "\n\tTeljes_ar:\t" + Teljes_ar
 							+ "\n\tPizza_neve:\t" + Pizza_neve); //Konzolra kiiras
-					String RendelesID = element.getAttribute("RendelesID");
-					ReadRendelesbyId(doc, RendelesID);
+					
 				}
 			}
 		}
 	}
 	
-	public static void ReadRendelesbyId(Document doc, String RendelesID) {
-		NodeList nList = doc.getElementsByTagName("Rendeles"); 
-		for (int i = 0; i < nList.getLength(); i++) {
-			Node nNode = nList.item(i);
-			Element element = (Element) nNode;
-			if (nNode.getNodeType() == Node.ELEMENT_NODE) {
-				if (element.getAttribute("RendelesID").equals(RendelesID)) { 
-
-					String VevoID = element.getAttribute("VevoID");
-					ReadVevoById(doc, VevoID);
-					
-					String PizzaID = element.getAttribute("PizzaID");
-					ReadPizzaById(doc, PizzaID);
-				}
-			}
-		}
-	}
+	
 	public static void ReadVevoById(Document doc, String VevoID) {
 		NodeList nList = doc.getElementsByTagName("Vevok"); 
 		for (int i = 0; i < nList.getLength(); i++) {

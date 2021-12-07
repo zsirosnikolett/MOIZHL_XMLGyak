@@ -15,7 +15,7 @@ import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
 import org.xml.sax.SAXException;
 
-
+ 
 public class DomQueryMOIZHL {
 	
 	public static void main(String[] args)
@@ -83,7 +83,7 @@ public class DomQueryMOIZHL {
 							Pizza+= 1;
 						
 							System.out.println(Pizza + ". Pizza adatai:");
-							String PizzaID = element.getAttribute("id");
+							String PizzaID = element.getAttribute(id);
 							DomReadMOIZHL.ReadPizzaById(doc, PizzaID);
 
 						}

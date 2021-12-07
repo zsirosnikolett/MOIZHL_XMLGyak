@@ -19,8 +19,8 @@
 
 		<Futarok>
 			<Futar FutarID="1" PizzazoID="1">
-				<Nev>Kiss József</Nev>
-				<Telefonszam>(20)5234534</Telefonszam>
+				<Nev>Kiss Ilona</Nev>
+				<Telefonszam>(20)6843588</Telefonszam>
 			</Futar>
 
 			<Futar FutarID="2" PizzazoID="2">
@@ -62,14 +62,14 @@
 
 		<Pizzak>
 			<Pizza PizzaID="1" PizzazoID="1">
-				<Meret>40</Meret>
-				<Teljes_ar>4000</Teljes_ar>
-				<Pizza_neve>Piedone</Pizza_neve>
+				<Meret>30</Meret>
+				<Teljes_ar>3000</Teljes_ar>
+				<Pizza_neve>Margarita</Pizza_neve>
 			</Pizza>
 			<Pizza PizzaID="2" PizzazoID="2">
-				<Meret>40</Meret>
+				<Meret>30</Meret>
 				<Teljes_ar>3000</Teljes_ar>
-				<Pizza_neve>Tengergyumolcse</Pizza_neve>
+				<Pizza_neve>Kukoricas</Pizza_neve>
 			</Pizza>
 			<Pizza PizzaID="3" PizzazoID="2">
 				<Meret>30</Meret>
